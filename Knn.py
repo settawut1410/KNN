@@ -57,7 +57,7 @@ if st.checkbox("แสดง Pairplot (ใช้เวลาประมวล�
     fig2 = sns.pairplot(dt, hue='variety')
     st.pyplot(fig2)
 
-    html_8 = """
+html_8 = """
 <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>ทำนายข้อมูล</h5></center>
 </div>
@@ -71,8 +71,7 @@ pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width"
 sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
 sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
 
-
-    if st.button("ทำนายผล"):
+if st.button("ทำนายผล"):
     #st.write("ทำนาย")
    dt = pd.read_csv("./data/iris-3.csv") 
    X = dt.drop('variety', axis=1)
