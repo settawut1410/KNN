@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.title('การจำแนกข้อมูลด้วยเทคนิค ML')
-#st.image("./img/moew.jpg")
+st.image("./img/moew.jpg")
 
 col1, col2, col3 = st.columns(3)
 
